@@ -1,0 +1,142 @@
+@font-face {
+    font-family: site;
+    src: url(site.ttf);
+}
+
+body, p{
+    margin: 0;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+/* 
+body{
+    background: #eee;
+} */
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.title{
+    width: 100%;
+    height: 70px;
+    background: #555;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    color: white;
+    align-content: center;
+    justify-content: left;
+    
+}
+
+.title div{
+    margin: 0px 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.main{
+    width: 90%;
+    margin: auto;
+}
+
+.con{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    font-family: "site";
+}
+
+.card{
+    width: 24%;
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background: #eee;
+    justify-content: space-between;
+}
+
+.card img{
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 5px;
+}
+
+#search-box{
+    display: flex;
+}
+
+
+#search{
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    transition: width 0.5s;
+}
+
+#search:focus{
+    width: 80%;
+}
+
+body .hide-none{
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+}
+
+.modal-box{
+    width: 30%;
+    min-width: 300px;
+    height: auto;
+    background: #eee;
+    display: flex;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.modal-box form{
+    width: 100%;
+}
+
+.modal-box input{
+    width: 95%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.modal-box>form>*{
+    margin-bottom: 5px;
+}
+
+.canvas{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    background: #ffffff;
+    border: 2px solid black;
+}
