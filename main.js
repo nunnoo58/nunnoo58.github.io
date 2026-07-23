@@ -18,7 +18,7 @@ $.get('json/store.json')
 function addProduct(num){
     $('.con').append(`
         <div class="card" data-index="${num}" draggable="true">
-        <image src='../image/pr${num+1}.jpg'>
+        <image src='image/pr${num+1}.jpg'>
         <h3>${list[num].id + 1}</h3>
         <h3>${list[num].title}</h3>
         <h5>가격: ${list[num].price}</h5>
