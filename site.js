@@ -1,6 +1,6 @@
 let list = []
 let cart = []
-$.get('../json/store.json')
+$.get('json/store.json')
     .done((data) => {
         data.products.forEach((a, i) => {
         list.push(a)
