@@ -141,6 +141,10 @@ body .hide-none{
     border: 2px solid black;
 }
 
+@media screen and (max-width: 1200px){
+    .card{
+        width: 30%
+}
 @media screen and (max-width: 768px){
     .card{
         width: 45%
