@@ -6,8 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="favicon.jpg">
+    <link rel="stylesheet" href="site.css">
     <script src="https://code.jquery.com/jquery-4.0.0.js"
     integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
     crossorigin="anonymous"></script>
@@ -17,10 +16,15 @@
         <div style="font-size: 30px;">집꾸미기
         </div>
         <div>
-            <a href="">Home</a>
+            <a href="">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            
         </div>
         <div>
-            <a href="store.html">Store</a>
+            <a href="store.html">
+                <i class="fa-solid fa-store"></i>
+            </a>
         </div>
         <div>
             <a href="gyeonjeok.html">Gyeonjeok</a>
@@ -31,7 +35,7 @@
     <div style="margin-top: 75px;"></div>
 
     <form id="search-box" action="">
-        <input 입력="text" id="search" placeholder="이름이랑 브랜드">
+        <input type="text" id="search" placeholder="이름이랑 브랜드">
     </form>
 
     <div class="main">
@@ -47,6 +51,7 @@
         </canvas>
         <button class="canvas-close">X</button>
     </div>
+        
     <div class="modal hide-none">
         <div class="modal-box">
             <form action="" id="purchase-form">
@@ -60,6 +65,6 @@
             <i class="fa-solid fa-x close"></i>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="site.js"></script>
 </body>
 </html>

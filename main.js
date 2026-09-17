@@ -1,6 +1,6 @@
 let list = []
 let cart = []
-$.get('json/store.json')
+$.get('../json/store.json')
     .done((data) => {
         data.products.forEach((a, i) => {
         list.push(a)
@@ -18,25 +18,26 @@ $.get('json/store.json')
 function addProduct(num){
     $('.con').append(`
         <div class="card" data-index="${num}" draggable="true">
-        <image src='image/pr${num+1}.jpg'>
+        <image src='../image/pr${num+1}.jpg'>
         <h3>${list[num].id + 1}</h3>
         <h3>${list[num].title}</h3>
         <h5>가격: ${list[num].price}</h5>
         <p>${list[num].brand}</p>
-        <button class='btn btn-dark'>구매</button>
+        <button class='btn btn-dark'>장바구니에 추가</button>
         </div>
         `)
-    }
+}
     
-    $('#search-box').on('submit', (e) => {
-        e.preventDefault()
-    })
-    
-    $('#search').on('focus', (e) => {
-        $(e.target).attr('placeholder', '')
-    })
-    
-    let search = ''
+$('#search-box').on('submit', (e) => {
+    e.preventDefault()
+})
+
+$('#search').on('focus', (e) => {
+    $(e.target).attr('placeholder', '')
+})
+
+let search = ''
+
 $('#search').on('blur', (e) => {
     $(e.target).attr('placeholder', '이름이랑 브랜드')
 })
